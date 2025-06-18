@@ -21,3 +21,11 @@ jobs:
           # Unless you use the `shell: bash` option, or use `${{ runner.os }}`
           echo "Runner OS: $RUNNER_OS"
         shell: bash
+  
+  macos-echo:
+    runs-on: macos-latest
+    steps:
+      - name: Show OS
+        run: |
+          echo "This job is running on a Mac OS runner."
+          echo "Runner OS: $RUNNER_OS"
