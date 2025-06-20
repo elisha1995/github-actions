@@ -21,7 +21,7 @@ jobs:
           # Unless you use the `shell: bash` option, or use `${{ runner.os }}`
           echo "Runner OS: $RUNNER_OS"
         shell: bash
-  
+
   macos-echo:
     runs-on: macos-latest
     steps:
